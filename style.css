@@ -1,8 +1,9 @@
 h1{
     text-align: center;
-    color: red;
-    text-decoration: black underline;
+    color: black;
     line-height: 0.1;
+    font-family: Arial;
+    text-decoration: wavy red underline;
 }
 h2{
     color: rgb(29, 39, 36);
@@ -18,4 +19,6 @@ a{
 p{
     color: maroon;
     letter-spacing: normal;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
