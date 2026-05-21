@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="/server">
+            <h1>Job application form</h1>
+            <p>Fill in the details below to apply</p>
+        
+            <section>
+                <div>
+                    <h3>Personal details</h3>
+                    <label for="fullname">Full name</label> <br>
+                    <input type="text" id="fullname" placeholder="fullname" name="fullname">
+                </div>
+                <div>
+                    <label for="email"> Email Address</label><br>
+                    <input type="email" id="email" placeholder="bikash@gmail.com" name="email">
+                </div>
+                <div>
+                    <label for="number">Phone number</label><br>
+                    <input type="tel" id="number" placeholder="+1 (507) 555-0192">
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Position</h3>
+                    <p>Select a job position</p>
+                    <select name="position">
+                        <option value="select">select the option</option>
+                        <option value="SoftE">Software engineer I</option>
+                    </select>
+                </div>
+            </section>
+            
+            <section>
+                <div>
+                    <h3>Empolyment type</h3>
+                    <label for="fulltime">Full-time</label>
+                    <input type="radio" id="fulltime" name="Empolyment_type"><br>
+                    <label for="parttime">Part-time</label>
+                    <input type="radio" id="parttime" name="Empolyment_type"><br>
+                    <label for="contract">contract</label>
+                    <input type="radio" id="contract" name="Empolyment_type"><br>
+                </div>
+            </section>
+        
+            <section>
+                <div>
+                    <h3>Skills</h3>
+                    <input type="checkbox" name="Skills" value="py" id="py">
+                    <label for="py">Python</label> <br>
+
+                    <input type="checkbox" name="Skills" value="ml" id="ml">
+                    <label for="ml">Machine Learning</label> <br>
+
+                    <input type="checkbox" name="Skills" value="Js" id="js">
+                    <label for="js">Javascript</label> <br>
+
+                    <input type="checkbox" name="Skills" value="c++" id="c++">
+                    <label for="c++">C++</label> <br>
+                </div>
+            </section>
+            
+            <section>
+                <div>
+                    <h3>Years of experience</h3>
+                    <input type="range" min="0" max="10" name="experience" step="2">
+                </div>
+            </section>
+            
+            <section>
+                <div>
+                    <h3>Cover letter</h3>
+                    <p>Why do you want this job?</p>
+                    <textarea name="cover_letter" placeholder="I'm passionate about the machine Learning and computer vision, and I believe this role aligns perfectly with..." rows="6" cols="50"></textarea>
+                </div>
+            </section>
+            <div>
+                <button>Submit application</button>
+                <button> reset </button>
+            </div>
+        
+            
+        </form>
+    </main>
+</body>
+</html>
+
+
+<!-- "When we submit a form, the browser collects all input data and sends it to the server as key-value pairs. 
+The name attribute acts as the key and the user's input acts as the value. 
+The server then uses the name to identify which field the data belongs to and takes further action.
+ If name is not present, the browser doesn't include that field in the request at all — so the server never even sees it."
+ -->

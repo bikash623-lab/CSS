@@ -3,10 +3,9 @@ h1{
     color: black;
     line-height: 0.1;
     font-family: Arial;
-    text-decoration: wavy red underline;
 }
 h2{
-    color: rgb(29, 39, 36);
+    color: black;
     font-weight: normal;
     text-decoration:wavy underline;
     line-height: 0.1;
@@ -17,8 +16,37 @@ a{
 }
 
 p{
-    color: maroon;
+    color: black;
     letter-spacing: normal;
+    text-align: center;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
+}
+section{
+    text-align: center;
+}
+button{
+    color: red;
+    display: block;
+    margin: 0 auto;
+    background-color: gold;
+    
+}
+
+body{
+    background-color: rgb(214, 220, 218);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+input, textarea, select{
+   
 }
